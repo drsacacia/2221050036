@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>bai 3</h1>
+    <p>cac cong viec can lam</p>
+    <!-- co thu tu ol, li  -->
+    <ol>
+        <li>thuc day</li>
+        <li>danh rang</li>
+        <li>an sang</li>
+        <li>di hoc</li>
+        <li>giai lao</li>
+    </ol>
+
+    <!-- khong thu tu ul, li  -->
+     <p>cac ngon ngu lap trinh web</p>
+     <ul>
+        <li>python</li>
+        <li>php</li>
+        <li>java</li>
+        <li>c#</li>
+     </ul>
+
+     <h1>form</h1>
+     <form>
+        <MArquee>
+            <img src="../buoi 2/VS--YouTube-S13Doraemon-Tp663MyBnHuchBnLngTingMiNht-8’27”.jpg" alt="">
+        </MArquee>
+        <div>
+            <b>ho va ten: </b><br>
+            <!-- placeholder de hien thi chu trong o  -->
+            <input type="text" name="hoten" placeholder="nhap vao day">
+        </div>
+        <br>
+
+        <div>
+            <b>nam: </b><br>
+            <!-- value gia tri, readonly chi doc  -->
+            <input type="text" name="nam" value="2025" readonly>
+        </div>
+        <br>
+
+        <div>
+            <b>gioi thieu chi tiet ve ban than: </b>
+            <br>
+            <textarea name="gioithieu">nhap gioi thieu...</textarea>
+        </div>
+        <br>
+
+        <div>
+            <b>email: </b><br>
+            <!-- placeholder de hien thi chu trong o  -->
+            <input type="email" name="email" placeholder="nhap dang @gmail.com">
+        </div>
+        <br>
+        <!-- so dau tien la 0 -->
+
+        <div>
+            <b>so dien thoai: </b><br>
+            <input type="tel" name="sodienthoai" placeholder="dang 09xxxxxxxx" 
+            required 
+            pattern="([0]{1})([0,3,9]{1})([0-9]{8})">
+        </div>
+        <br>
+
+        <div>
+            <b>gioi tinh: </b><br>
+            <input type="radio" name="gioitinh" value="nam">nam <br>
+            <input type="radio" name="gioitinh" value="nu">nu <br>
+            <input type="radio" name="gioitinh" value="khongxacdinh">khong xac dinh <br>
+        </div>
+        <br>
+
+        <div>
+            <b>so thich: </b><br>
+            Game: <input type="checkbox" name="sothich" value="game"><br>
+            Music: <input type="checkbox" name="sothich" value="music"><br>
+            Sport<input type="checkbox" name="sothich" value="sport"><br>
+        </div>
+        <br>
+
+        <div>
+            <b>trinh duyet ua thich</b><br>
+            <input list="browsers" placeholder="chon mot">
+            <datalist id="browsers">
+                <option value="ex ad">
+                <option value="firefox">
+                <option value="chrome">
+                <option value="opera">
+            </datalist>
+            <br>
+            <select name="browsers">
+            <option value="chon">chon</option>
+            <option value="ex ad">ex ad</option>
+            <option value="firefox">firefox</option>
+            <option value="chrome">chrome</option>
+            <option value="opera">opera</option>
+        </select>
+        </div>
+        <br>
+
+        <div>
+            0 <input type="range" value="20"> 100
+        </div>
+        <br>
+
+        <div>
+            <b>tuoi: </b><br>
+            <input type="number" name="tuoi" step="0.5">
+        </div>
+        <br>
+
+        <div>
+            <b>ngay thang nam sinh: </b><br>
+            <input type="date" name="ngaythangnamsinh">
+        </div><br>
+
+        <div>
+            <b>mau sac yeu thich: </b><br>
+            <input type="color" name="" id="">
+        </div><br>
+
+        <div>
+            <b>chon anh dai dien: </b><br>
+            <input type="file">
+        </div><br>
+
+        <div>
+            <b>mat khau: </b><br>
+            <input type="password" name="matkhau">
+        </div><br>
+
+        <div>
+            <b>reset</b><br>
+            <input type="reset" name="reset">
+        </div><br>
+
+        <div>
+            <input type="submit" value="haha">
+        </div>
+        <br>
+
+
+     </form>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/d-t3BVtKkUM?si=vtci6-hIusiJLB6S" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+     <br>
+     <video controls width="560" height="315">
+        <source src="../buoi 3/bandicam 2025-07-04 23-17-12-943.mp4" type="video/mp4">
+    </video>
+    <br>
+    <audio controls>
+        <source src="../buoi 3/Arena of Valor - Skin Music - ZEPHYS - XENO CORE - Original Game Soundtrack.mp3" type="audio/mp3">
+    </audio>
+</body>
+</html>
