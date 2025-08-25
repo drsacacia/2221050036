@@ -1,0 +1,31 @@
+h3 {
+    color: orange;
+}
+
+#title {
+    background-color: aqua;
+}
+
+.bg {
+    background-color: brown;
+}
+p {
+    color: red;
+    background-color: blue;
+}
+.box1 {
+    background-color: red;
+}
+.box2 {
+    background-color: green;
+    /* truyen 1 gia tri: cach xung quanh bang gia tri do */
+    /* gtri 1 tren duoi, 2 trai phai */
+    /* tren phai duoi trai */
+    /* margin: 50px 20px 100px 10px; */
+    width: 50%;
+    /* margin: auto; de can giua */
+    margin: 50px auto;
+}
+.box3 {
+    background-color: orange;
+}
