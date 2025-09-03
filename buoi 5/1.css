@@ -1,0 +1,68 @@
+body{
+    margin: 0px;
+}
+ul{
+    margin: 0px;
+}
+.danhmuc{
+    background-color: #2fa4e7;
+    padding: 20px;
+}
+.danhmuc-danhsach{
+    /* chuyen cac the ben trong thanh 1 dong */
+    display: flex;
+    /* bo dau cham note */
+    list-style: none;
+}
+.danhmuc-muc{
+    margin: 10px;
+}
+.danhmuc-lienket{
+    color: white;
+    /* bo gach chan */
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bold;
+}
+.danhmuc-lienket:hover{
+    color: grey;
+}
+.logo{
+    height: 40px;
+    background-color: gray;
+}
+main{
+    display: flex;
+}
+.noidung-trai{
+    width: 80%;
+    border-radius: 10px;
+}
+.noidung-phai{
+    height: 1000px;
+    background-color: brown;
+    width: 20%;
+}
+.tieude{
+    background-color: #2fa4e7;
+    padding: 20px;
+    font-size: x-large;
+    font-weight: bold;
+    border-radius: 10px 10px 0px 0px ;
+}
+.tintuc-danhsach{
+    display: flex;
+    justify-content: space-between;
+}
+.baiviet{
+    height: 200px;
+    background-color: aqua;
+    width: 32%;
+
+}
+p{
+    
+}
+img{
+    height: 100px;
+}
