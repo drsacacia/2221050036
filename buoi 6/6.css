@@ -1,0 +1,204 @@
+body{
+    margin: 0px;
+}
+.demuc{
+    background-color: #2fa4e7;
+    padding: 10px;
+}
+.demuc-danhsach{
+    display: flex;
+    list-style: none;
+}
+ul{
+    margin: 0px;
+}
+.danhsach{
+    margin: 10px;
+}
+.trangchu{
+    color: white;
+    font-size: x-large;
+    text-decoration: none;
+}
+.lienket{
+    color: gainsboro;
+    font-size: x-large;
+    text-decoration: none;
+}
+a:hover{
+    color: gray;
+}
+.logo img{
+    display: block;
+    width: 1520px;
+    height: 200px;
+}
+main{
+    display: flex;
+}
+.nd-trai{
+    width: 80%;
+    height: 1000px;
+    margin-right: 10px;
+}
+.nd-phai{
+    width: 20%;
+    height: 1000px;
+}
+.tintuc-demuc{
+    background-color:#2fa4e7;
+    padding: 10px;
+    font-size: x-large;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px 10px 0px 0px;
+}
+.tintuc-danhsach{
+    display: flex;
+    justify-content: space-between;
+}
+.baiviet{
+    position: relative;
+    width: 33%;
+    height: 200px;
+    background-color: aqua;
+    
+}
+.baiviet img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.thoigian{
+    position: absolute;
+    top: 0px;
+    text-align: right;
+    color: white;
+    font-size: x-large;
+    background-color: skyblue;
+    width: 100%;
+}
+.noidung{
+    position: absolute;   /* đè lên ảnh */
+    bottom: 0px;         /* cách mép dưới 10px */
+    text-align: left;          /* chữ bên trái */
+    color: white;         /* chữ trắng */
+    font-size: x-large;
+    background-color: skyblue;
+    width: 100%;
+}
+.dangnhap-danhmuc{
+    color: white;
+    background-color: #2fa4e7;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+    font-weight: bold;
+}
+.dangnhap{
+    background-color: azure;
+}
+.tk{
+    display: flex;
+    border-radius: 10px;
+}
+.mk{
+    display: flex;
+}
+.quenmk-button{
+    font-size: large;
+    text-decoration: none;
+    color: blue;
+}
+.quenmk{
+    text-align: right;
+}
+.nutdangnhap-button{
+    width: 100%;
+    font-size: large;
+}
+.dangnhapmc-button{
+    width: 100%;
+    font-size: large;
+}
+.caidatapp-demuc{
+    color: white;
+    font-size: x-large;
+    background-color: #2fa4e7;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+.qr img{
+    width: 100%;
+}
+.thongbao{
+    margin-top: 10px;
+}
+.thongbao-danhsach{
+    display: flex;
+}
+.nghihoc{
+    width: 30%;
+}
+.thongbao-demuc{
+    width: 100%;
+}
+.nghihoc{
+    background-color: aliceblue;
+    padding: 10px;
+}
+.nghihoc img{
+    width: 100%;
+    height: 300px;
+}
+.nghihoc-thoigian{
+    text-align: right;
+}
+.thongbao-noidung{
+    list-style: none;
+    padding: 0px;
+}
+.thongbao-baiviet{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 10px 10px;
+    border-bottom: 1px solid #ddd
+}
+.thongbao-baiviet-thoigian{
+    color: gray;
+}
+.cuoi{
+    text-align: center;
+}
+.huongdan{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.huongdan-demuc{
+    background-color: #2fa4e7;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    font-weight: bold;
+    font-size: x-large;
+    padding: 10px;
+}
+.huongdan-danhmuc{
+    list-style: none;
+    padding: 0px;
+}
+.huongdan-baiviet{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 10px 20px;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.huongdan-baiviet-thoigian{
+    color: gray;
+}
+.nghihoc-noidung1{
+    font-size: x-large;
+    color: black;
+    text-decoration: none;
+}
