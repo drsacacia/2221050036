@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: black;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    width: 70%;
+    margin: auto;
+}
+
+.danhmuc {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 15%;
+}
+
+.danhmuc ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    gap: 20px
+}
+
+.danhmuc a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #9b9b9b;
+    font-size: 16px;
+    font-family: "SFProDisplay", Arial, sans-serif;
+}
+
+a:hover {
+    color: orange;
+}
+
+.chucnang {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.muagoi {
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.dangnhap {
+    background-color: black;
+    color: white;
+    border: none;
+    width: 100px;
+}
+
+main {
+    background-color: #131314;
+    color: white;
+    width: 100%;
+    /* height: 1000px; */
+}
+
+.quangcao {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 70%;
+    background-color: black;
+    /* height: 1000px; */
+    margin: auto;
+    margin-bottom: 0px;
+}
+
+.banner {
+    width: 98%;
+}
+
+.qc {
+    margin-top: 10px;
+    width: 98%;
+    border-radius: 10px;
+}
+
+.tentheloai {
+    margin: 20px;
+    font-family: "SFProDisplay", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.danhsach {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.phim {
+    width: 19%;
+}
+
+.phim img {
+    width: 100%;
+}
+.ten{
+    font-family: "SFProDisplay", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+footer{
+    width: 100%;
+    background-color: #131314;
+}
+
+.footer{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.footer-anh{
+    margin-top: 50px;
+    width: 20%;
+}
+.footer-anh img{
+    width: 130px;
+    margin-top: 10px;
+}
+.footer-danhsach{
+    display: flex;
+    margin-top: 50px;
+}
+.footer-lienhe{
+    color: aliceblue;
+    padding: 0;
+    margin-left: 20px;
+}
+.footer-lienhe ul{
+    list-style: none;
+}
+.footer-lienhe li{
+    
+    margin-bottom: 8px;
+}
+.footer-lienket a{
+    color: #d2d2d2;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: "SFProDisplay", Arial, sans-serif;
+    font-size: 14px;
+}
+.footer-lienhe1{
+    font-family: "SFProDisplay", Arial, sans-serif;
+    font-size: 14px;
+    color: #d2d2d2;
+}
+.footer-lienhe1 li{
+    margin-bottom: 16px;
+}
+.icon-1{
+    display: flex;
+}
+.footer-van{
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-vanban{
+    margin-top: 10px;
+    font-family: "SFProDisplay", Arial, sans-serif;
+    color: #d2d2d2;
+    font-size: 13px;
+    width: 80%;
+}
+.icon{
+    margin-top: 10px;
+    margin-right: 50px;
+}
+.footer-separator {
+    border: none;
+    border-top: 1px solid #333;
+    width: 70%;
+    margin: auto;
+}
