@@ -71,6 +71,7 @@ main {
     color: white;
     width: 100%;
     /* height: 1000px; */
+    padding-bottom: 70px;
 }
 
 .quangcao {
@@ -133,6 +134,10 @@ footer{
     width: 70%;
     margin: auto;
     margin-bottom: 50px;
+    /* margin-top: 70px; */
+    border-top: 1px solid #333;
+    /* border: none; */
+    /* padding-top: 70px; */
 }
 .footer-anh{
     margin-top: 50px;
@@ -182,6 +187,7 @@ footer{
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
+    border-top: 1px solid #333;
 }
 .footer-vanban{
     margin-top: 10px;
@@ -194,9 +200,9 @@ footer{
     margin-top: 10px;
     margin-right: 50px;
 }
-.footer-separator {
+/* .footer-separator {
     border: none;
     border-top: 1px solid #333;
     width: 70%;
     margin: auto;
-}
+} */

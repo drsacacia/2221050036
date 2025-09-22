@@ -1,0 +1,74 @@
+body{
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0.899);
+}
+
+.khungngoai{
+    width: 50%;
+    margin: 50px auto;
+    background-color: black;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.khungtrong{
+    width: 80%;
+    margin: auto;
+}
+
+.form{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+.logo{
+    font-size: 50px;
+    color: white;
+}
+h1{
+    color: white;
+}
+.nut{
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
+
+    /* dùng icon thì mới dùng display: ; justify-content: ; gap: ; */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    font-size: large;
+    font-weight: bold;
+    border: 2px solid white;
+}
+
+.tren{
+    border-bottom: 2px solid gray;
+    margin-top: 20px;
+}
+.form-duoi{
+    width: 60%;
+    margin: auto;
+}
+input{
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+    border: 2px solid white;
+    background-color: black;
+    font-size: large;
+    font-weight: bold;
+}
+.nut1{
+    background-color: greenyellow;
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}

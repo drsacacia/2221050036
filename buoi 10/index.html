@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="javascript" href="10.css">
+    <script src="10.js"></script>
+</head>
+<body>
+    <script>
+        document.writeln("hello world" + "123");
+        // let hoac var
+        // let tenBien = giaTri;
+        // noi chuoi dung dau +
+        let hoTen = "pham ky son" + "<br>";
+        document.writeln(hoTen);
+        // let sothunhat = 10;
+        // let sothuhai = 5;
+        // let ketqua = 0;
+        // cong +
+        // tru -
+        // nhan *
+        // chia /
+        // ketqua = sothunhat / sothuhai;
+        // ++ketqua them 1
+        // --
+        // % chia lay phan du
+        // sothunhat += sothuhai;
+        // sothunhat = sothunhat + sothuhai;
+        // sothunhat %= sothuhai;
+        let sothunhat = 5;
+        let sothuhai = "5";
+        let ketqua;
+        // == != chi quan tam gia tri ben tron
+        // === !== xet ca kieu du lieu
+        // ! phu dinh 
+        let thongtinSinhVien = {
+            hoTen: "le truong an",
+            mssv: 2221050036,
+            gioiTinh: true,
+            tuoi: 10,
+            lop: "sadsdaa"
+
+        }
+        let diaChiNhaBanAn = {
+            thanhPho: "thanh hoa",
+            phuong: "tao xuyen",
+            duong: "asdada",
+            soNha: 123
+        }
+        thongtinSinhVien.diaChi = diaChiNhaBanAn;
+        // let thongtinSinhVien = {
+        //     hoTen: "le truong an",
+        //     mssv: 2221050036,
+        //     gioiTinh: true,
+        //     tuoi: 10,
+        //     lop: "sadsdaa",
+        //     diaChi:{
+        //         thanhPho: "thanh hoa",
+        //         phuong: "tao xuyen",
+        //         duong: "asdada",
+        //         soNha: 123
+        //     }
+
+        // }
+        document.writeln("xin chao ban " + thongtinSinhVien.hoTen + " "+ thongtinSinhVien.tuoi + " tuoi" + " nha o" + " " + thongtinSinhVien.diaChi.thanhPho + "<br>");
+        let namNay = 2025;
+        namSinh = namNay - thongtinSinhVien.tuoi
+        document.writeln("ban "+ thongtinSinhVien.hoTen + " sinh nam " + namSinh)
+    </script>
+</body>
+</html>
