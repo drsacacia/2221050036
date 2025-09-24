@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let thongTinDonHang = {
+            maDonHang: "131313",
+            khachHang : {
+                hoTen: "pham ky son",
+                sdt: "0123131",
+                trangThai: true
+            },
+            danhsach : {
+                sp1:{
+                    msp: 1,
+                    tenSp: "ca phe",
+                    sl: 1,
+                    gia: 100
+                },
+                sp2:{
+                    msp: 2,
+                    tenSp: "matcha",
+                    sl: 15,
+                    gia: 200
+                },
+                sp3:{
+                    msp: 3,
+                    tenSp: "tra sua",
+                    sl: 2,
+                    gia: 300
+                }
+
+            },
+            thanhToanThanhCong: true,
+            diaChiGiaoHang: "Đông Ngạc"
+        }
+        let tongsp1 = thongTinDonHang.danhsach.sp1.gia * thongTinDonHang.danhsach.sp1.sl;
+        let tongsp2 = thongTinDonHang.danhsach.sp2.gia * thongTinDonHang.danhsach.sp2.sl;
+        let tongsp3 = thongTinDonHang.danhsach.sp3.gia * thongTinDonHang.danhsach.sp3.sl;
+        let tongtien = tongsp1 + tongsp2 + tongsp3;
+        document.writeln("do dai madonhang " + thongTinDonHang.maDonHang.length + "<br>");
+        // length kiem tra do dai cua chuoi
+        var my= "hello kien";
+        document.writeln(my[4]);
+        document.writeln(my.slice(1,4));
+        document.writeln(my.replace("hello", "hi,"));
+        document.writeln(my.toLocaleUpperCase());
+        // indexOf trả ra vị trí đầu tiên , nếu ko có trả ra -1
+        document.writeln(my.indexOf('e'));
+        // includes trả ra có hay ko
+        document.writeln(my.includes('e'));
+        // tách chuỗi thành mảng
+        document.writeln(my.split(''));
+        document.writeln(my.split(' '));
+        let danhsach = [
+            "ádasd", "pham sdfsdfs"
+        ]
+        document.writeln(danhsach[1].startsWith('pham'));
+        // chuyển chuỗi về số
+        var so="123";
+        document.writeln(typeof (so));
+        document.writeln(typeof (Number(so)));
+        document.writeln(parseInt("13.5"));
+        document.writeln(parseFloat("13.5"));
+        var a= 1.2323;
+        document.writeln(a.toFixed(3));
+        document.writeln(isNaN(my));
+        document.writeln(isFinite(10));
+        let today = new Date( '2023-06-25');
+
+        document.writeln(today.getDay());
+    </script>
+</body>
+</html>
