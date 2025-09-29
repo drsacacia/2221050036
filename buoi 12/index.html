@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let today = new Date();
+        // mangr
+        let arr =[1,2,3,4,5,'a','b','c',5,6];
+        document.writeln(arr.length +"<br>");
+        document.writeln(arr[3] +"<br>") // docj dendes phanaf tuwr trong mangr
+        document.writeln(arr.indexOf('a') +"<br>");
+        document.writeln(arr.lastIndexOf(5) +"<br>");
+        let g= "abc";
+        // Array.isArray xem co phai chuoi ko
+        document.writeln(Array.isArray(g)  +"<br>");
+        let a ,b, c , d;
+        a = [1,2,3];
+        b = "javascript";
+        c = [42, "vbadsad"];
+        d = a.concat(b,c);
+        document.writeln(d +"<br>");
+        document.writeln(Array.isArray(d) +"<br>");
+        document.writeln(d.join("-") +"<br>");
+        document.writeln(typeof(d.join("-")) +"<br>"); // chuyen mang thanhf chuoi
+        // document.writeln(d.pop() +"<br>");
+        e = d.pop(); // mat phan tu cuoi
+        document.writeln(e +"<br>"); // hien thi phan tu mat
+        document.writeln(d +"<br>");
+        d.push("kien")
+        document.writeln(d +"<br>");
+        // document.writeln(d.push("kien") +"<br>");
+        document.writeln(d.reverse() +"<br>");
+        // arr.shift() xoa phan tu dau tien
+        // arr.unshift(0) them pan tu vao dau mang
+        document.writeln(d.reverse() +"<br>");
+        d[3] = 4;
+        document.writeln(d +"<br>");
+
+        let today = new Date();
+        let now = today.getHours();
+        if(now < 10){
+            document.writeln("chao buoi sang");
+        }else if( 10<= now && now < 12){
+            document.writeln("chao buoi trua");
+        }else if(12<= now && now <17) {
+            document.writeln("chao buoi chieu");
+        }else if(17<= now && now <22) {
+            document.writeln("chao buoi toi");
+        }else{
+            document.writeln("chao buoi dem" +"<br>");
+        }
+        let so = "10000000000000005";
+        document.writeln(so[so.length-1] +"<br>");
+        let socuoi = parseInt(so[so.length-1]);
+        //kiem tra co==so la chan hay le
+        if(socuoi % 2 == 0){
+            document.writeln("la so chan" +"<br>")
+        } else{
+            document.writeln("la so le" +"<br>")
+        }
+    </script>
+</body>
+</html>
