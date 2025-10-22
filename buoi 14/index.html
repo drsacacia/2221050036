@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>bai 11</h1>
+    <!-- tao ham tinh diem a,b,c -->
+    <!-- tong = a*0.6 + b*0.3 +c*0.1  -->
+    <h2>tinh diem</h2>
+    <div>
+        diem a: <input type="number" id="diema" placeholder="nhap diem a">
+    </div>
+    <div>
+        diem b: <input type="number" id="diemb" placeholder="nhap diem b">
+    </div>
+    <div>
+        diem c: <input type="number" id="diemc" placeholder="nhap diem c">
+    </div>
+    <div>
+        <button onclick="xemkqua()">tinh diem</button>
+    </div>
+    <div>
+        ket qua: <input type="text" id="ketqua">
+    </div>
+    <script>
+        // let a = Number(prompt("a"));
+        // let b = prompt("b","nhap so");
+        // let c = prompt("c","nhap so");
+        // // let tong = a*0.6 + b*0.3 +c*0.1;
+        // function tinhdiem(a,b,c){
+        //     if(isNaN(tinhdiem)){
+        //         document.writeln("nhap vao so");
+        //     }else if(tinhdiem <0 && tinhdiem <10){
+        //         document.writeln("nhap vao so");
+        //     }
+        // }
+        // let tong = a*0.6 + b*0.3 +c*0.1;
+        // document.writeln("ket qua la: " + tong);
+        // document.getElementById('ketqua').value;
+        function xemkqua(){
+            let diema =parseFloat(document.getElementById('diema').value); 
+            let diemb =parseFloat(document.getElementById('diemb').value);
+            let diemc =parseFloat(document.getElementById('diemc').value); 
+            document.writeln(diema);
+            document.writeln(diemb);
+            document.writeln(diemc);
+            tinhdiem(diema,diemb,diemc)
+            document.getElementById('ketqua').value;
+        }
+        function tinhdiem(a, b, c){
+            let tong;
+            if (kiemtra(a, b, c) == true){
+                tong = a*0.6 + b*0.3 +c*0.1;
+                document.writeln(tong);
+            }
+            if (tong > 9){
+                document.writeln("diem chu la a+");
+            }
+            if (tong <= 9 && tong >= 8.5){
+                document.writeln("diem chu la a");
+            }
+            if (tong >= 8 && tong < 8.5 ){
+                document.writeln("diem chu la b+");
+            }
+            if (tong >= 7 && tong < 8){
+                document.writeln("diem chu la a");
+            }
+            if (tong >= 6 && tong < 7){
+                document.writeln("diem chu la a");
+            }
+        }
+        function kiemtra(a, b, c){
+            let ketqua = true;
+            if (a < 0 || a > 10 || typeof(a) != 'number'){
+                document.writeln("diem a khong hop le")
+                ketqua = false;
+            }
+            if (b < 0 || b > 10 || typeof(b) != 'number'){
+                document.writeln("diem b khong hop le")
+                ketqua = false;
+            }
+            if (c < 0 || c > 10 || typeof(c) != 'number'){
+                document.writeln("diem c khong hop le")
+                ketqua = false;
+            }
+            return ketqua;
+        }
+
+        // let a = 5;
+        // let b = 6;
+        // let c = 7;
+        // tinhdiem(a, b, c)
+    </script>
+</body>
+</html>
