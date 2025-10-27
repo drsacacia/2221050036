@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bt.css">
+</head>
+<body>
+    <div>
+        chieu cao: <input type="number" id="cao" placeholder="nhap chieu cao (m)">
+    </div>
+    <div>
+        can nang: <input type="number" id="nang" placeholder="nhap can nang (kg)">
+    </div>
+    <div>
+        <button onclick="nhap()">kiem tra</button>
+    </div>
+    <div>
+        ket qua: <input type="text" id="ketqua">
+    </div>
+    <div>
+        <img src="./khongloxanh1.png" height="500px" alt="">
+    </div>
+    <script>
+        function dieukien(cao,nang){
+            let kqdieukien = true;
+            if(isNaN(cao) || cao < 0){
+                document.writeln("nhap lai chieu cao");
+                kqdieukien = false;
+            }
+            if(isNaN(nang) || cao < 0){
+                document.writeln("nhap lai can nang");
+                kqdieukien = false;
+            }
+            return kqdieukien;
+        }
+        function tinhtoan(cao, nang){
+            if(dieukien(cao,nang) == true){
+                let congthuc = nang / ( cao * cao);
+                if (congthuc >= 40){
+                    document.getElementsByTagName('img')[0].src = 'beonang.png';
+                    
+                } else if(congthuc >= 30){
+                    document.getElementsByTagName('img')[0].src = 'beocapdo1.png';
+                    
+                }else if(congthuc >= 25){
+                    document.getElementsByTagName('img')[0].src = 'thua.png';
+                    
+                }else if(congthuc >= 18.5){
+                    document.getElementsByTagName('img')[0].src = 'binhthuong.png';
+                    
+                }else{
+                    document.getElementsByTagName('img')[0].src = 'thieu.png';
+                    
+                }
+                document.getElementById('ketqua').value = "chi so bmi cua ban la " + congthuc;
+                document.getElementsByTagName('img')[0].src;
+                
+            }
+        }
+        function nhap(){
+            let chieucao = parseFloat(document.getElementById('cao').value);
+            let cannang = parseFloat(document.getElementById('nang').value);
+            tinhtoan(chieucao, cannang);
+        }
+    </script>
+</body>
+</html>
