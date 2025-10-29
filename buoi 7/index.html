@@ -40,11 +40,16 @@
         </div>
         <div class="container">
             <div>
-                <div style="display: flex; justify-content: center;">
+                <div id="video" style="display: flex; justify-content: center;">
                     <img class="banner" src="640x396-muado.jpg" alt="">
+                    
+                </div>
+                <div>
+                    <button onclick="nut()">chay</button>
                 </div>
                 <div style="display: flex; justify-content: center;">
                     <img class="qc" src="qc.jpg" alt="">
+                    
                 </div>
             </div>
             <div class="theloai">
@@ -407,6 +412,49 @@
         </div>
         <br>
     </footer>
+    <script>
+        // function nut(){
+        //     let video = document.getElementById('video');
+        //     if(video){
+        //         document.getElementsByClassName('banner')[0].innerHTML = 'video src="bandicam 2025-07-04 23-17-12-943.mp4" controls'
+                
+        //     }
+        // }
+        let listFilm = [
+            {
+                id: 1,
+                name: "mua do",
+                type: "Phim chiếu rạp",
+                banner:"buoi 7/09_68bfea5810013f0001205210.jpg",
+                trailer: "https://youtu.be/EIkXIqCvWUc?si=Cm1_lD_tXN3JAICx"
+            },
+            {
+                id: 2,
+                name: "mua do",
+                type: "Phim chiếu rạp",
+                banner:"buoi 7/640x396-muado.jpg",
+                trailer: "https://youtu.be/EIkXIqCvWUc?si=Cm1_lD_tXN3JAICx"
+            },
+            {
+                id: 3,
+                name: "mua do",
+                type: "Phim chiếu rạp",
+                banner:"buoi 7/640x396-muado.jpg",
+                trailer: "https://youtu.be/EIkXIqCvWUc?si=Cm1_lD_tXN3JAICx"
+            }
+        ];
+        let bannerElenemt = document.getElementsByClassName("banner")[0];
+        function viewTrailer(){
+            let trailerElement = document.getElementsByClassName("trailer")[0];
+            bannerElenemt.style.display = "none";
+            trailerElement.style.display = "block";
+
+        }
+        function chooseFilm(filmId){
+            let selectedFilm = listFilm.find(film => film.id === filmId);
+            bannerElenemt.style.backgroundImage = "url" + "('" + selectedFilm.banner + "')";
+        }
+    </script>
 </body>
 
 </html>
